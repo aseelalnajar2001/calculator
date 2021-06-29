@@ -1,0 +1,93 @@
+body, #container{
+	font-family: 'Open Sans',sans-serif;
+    background-color: white;
+    height: 100%;
+    /* background: url(img/4.jpeg) no-repeat center;
+    background-size: cover; */
+}
+
+#calculator{
+	width: 350px;
+	height: 540px;
+    background: rgba(204, 204, 204, 0.9);
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(46, 46, 46, 0.3), 0 6px 20px 0  rgba(46, 46, 46, 0.3);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #444444;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+    font-size: 30px;
+    color: #000;
+}
+#keyboard{
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.operator, .number {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 18px;
+    background-color:rgb(29, 29, 29);
+    border: 1px solid rgb(77, 76, 76);
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.number:hover, .operator:hover{
+    cursor: pointer;
+    color: rgb(29, 29, 29);
+    background-color: rgb(185, 185, 185);
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus{
+	outline: 0;
+}
+.operator {
+    color: green;
+}
+.cancel {
+    color: orangered;
+}
+.number {
+    color: white;
+}
+.equal {
+    background-color: green;
+    color: white;
+}
